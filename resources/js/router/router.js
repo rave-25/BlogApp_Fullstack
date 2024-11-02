@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Tags from '../components/pages/Tags.vue'
-import Home from '../components/pages/Home.vue'
+import Tags from '../admin/pages/Tags.vue'
+import Home from '../admin/pages/Home.vue'
+
 
 const routes =[
     {

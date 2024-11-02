@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 
 class DevController extends Controller
 { 
-    // function getMethod(){
-    //     return 'hi!';
-    // }
     public function getMethod(){
         // return view("welcome");
         return response()->json([
             'msg' => "json only"
         ]);
+    }
+     public function test(){
+        return 'it is working';
     }
 }
