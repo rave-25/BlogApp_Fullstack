@@ -44,6 +44,16 @@ class AdminControl extends Controller
             return response()->json(['message' => 'Tag update failed'], 500);
         }
     }
+    public function deleteTag(Request $request)
+    {
+        // Validate request
+        $request->validate([
+            'id' => 'required',
+        ]);
+
+        // delete tag
+        return Tag::where('id', $request->id)->delete();
+    }
    
 
     

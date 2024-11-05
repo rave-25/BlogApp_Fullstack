@@ -7,6 +7,8 @@ use App\Http\Controllers\DevController;
 Route::post('app/create_tag', [AdminControl::class, 'addTag']);
 Route::get('app/get_tags', [AdminControl::class, 'getTag']);
 Route::post('app/edit_tag', [AdminControl::class, 'editTag']);
+Route::post('app/delete_tag', [AdminControl::class, 'deleteTag']);
+
 
 Route::get('/', function () {
     return view('welcome');
